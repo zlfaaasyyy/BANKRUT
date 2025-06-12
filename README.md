@@ -1,28 +1,28 @@
----
-
 ````markdown
-# 📟 ATM Simulation Project - Kelompok 21
+# ATM Simulation Project - Kelompok 21
 
-Proyek ini merupakan simulasi sistem ATM yang dibangun menggunakan bahasa pemrograman Java dengan struktur Model-View-Controller (MVC). Aplikasi ini menyediakan fitur-fitur dasar yang umum ditemukan dalam mesin ATM, seperti login, pendaftaran, tarik/setor tunai, transfer, dan melihat riwayat transaksi.
+Proyek ini merupakan simulasi sistem ATM yang dibangun menggunakan bahasa pemrograman Java dengan struktur Model-View-Controller (MVC).
+Aplikasi ini menyediakan fitur-fitur dasar yang umum ditemukan dalam mesin ATM, seperti login, pendaftaran, tarik/setor tunai, transfer,
+dan melihat riwayat transaksi.
 
-## 🚀 Fitur Utama
+## Fitur Utama
 
-- 🔐 **Login dan Register**
-- 💵 **Setor Tunai**
-- 💸 **Tarik Tunai**
-- 🔁 **Transfer Antar Akun**
-- 📄 **Riwayat Transaksi**
-- 🧩 **Struktur MVC**
-- 🗃️ **Data Tersimpan dalam Format JSON** (`users.json`, `transactions.json`)
+-** Login dan Register**
+-** Setor Tunai**
+-** Tarik Tunai**
+-** Transfer Antar Akun**
+-** Riwayat Transaksi**
+-** Struktur MVC**
+- ** Data Tersimpan dalam Format JSON** (`users.json`, `transactions.json`)
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 - Java (JDK 17 atau kompatibel)
 - Gradle (build system)
 - VSCode (opsional, tersedia konfigurasi di `.vscode`)
 - JSON (untuk penyimpanan data pengguna dan transaksi)
 
-## 📁 Struktur Proyek
+## Struktur Proyek
 
 ```bash
 app/
@@ -38,7 +38,7 @@ app/
 ├── transactions.json          # Data transaksi
 ````
 
-## ▶️ Cara Menjalankan Proyek
+## Cara Menjalankan Proyek
 
 1. **Clone atau ekstrak proyek ini**
 2. **Buka terminal di direktori `PROJECT ATM KLP 21`**
@@ -56,7 +56,7 @@ gradlew.bat build
 gradlew.bat run
 ```
 
-## 🧪 Pengujian
+## Pengujian
 
 File test terdapat di:
 
@@ -70,7 +70,7 @@ Jalankan test dengan:
 ./gradlew test
 ```
 
-## 👨‍💻 Kontributor
+## Kontributor
 
 Kelompok 21 - Proyek Pemrograman Berbasis Objek
 **-ANDI FA'ATHIR EKA SAPUTRA A.A**

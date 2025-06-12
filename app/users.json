@@ -1,0 +1,22 @@
+[ {
+  "namaLengkap" : "Nayla",
+  "username" : "naynay",
+  "pin" : "222009",
+  "nomorRekening" : "2973795956",
+  "saldo" : 345000.0,
+  "registrationDate" : "2025-06-09T17:14:05.370155"
+}, {
+  "namaLengkap" : "yaya",
+  "username" : "yiyi",
+  "pin" : "111111",
+  "nomorRekening" : "7118478172",
+  "saldo" : 555000.0,
+  "registrationDate" : "2025-06-09T20:05:12.5520568"
+}, {
+  "namaLengkap" : "tatang kopling",
+  "username" : "Admin123",
+  "pin" : "121212",
+  "nomorRekening" : "9545834548",
+  "saldo" : 450000.0,
+  "registrationDate" : "2025-06-12T20:12:38.9461141"
+} ]

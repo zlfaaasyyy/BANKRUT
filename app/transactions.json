@@ -1,0 +1,67 @@
+[ {
+  "username" : "yiyi",
+  "referenceNumber" : "413797541485",
+  "transactionType" : "Setor Tunai",
+  "transactionDate" : "2025-06-11T19:55:12.716549",
+  "sourceAccount" : "7118478172",
+  "sourceName" : "yaya",
+  "targetAccount" : "7118478172",
+  "targetName" : "yaya",
+  "amount" : 500000.0,
+  "balanceAfter" : 705000.0
+}, {
+  "username" : "yiyi",
+  "referenceNumber" : "001601429268",
+  "transactionType" : "Tarik Tunai",
+  "transactionDate" : "2025-06-11T19:56:10.9790928",
+  "sourceAccount" : "7118478172",
+  "sourceName" : "yaya",
+  "targetAccount" : "7118478172",
+  "targetName" : "yaya",
+  "amount" : 250000.0,
+  "balanceAfter" : 455000.0
+}, {
+  "username" : "yiyi",
+  "referenceNumber" : "877200772189",
+  "transactionType" : "Transfer Bank BRI",
+  "transactionDate" : "2025-06-11T19:56:57.2180147",
+  "sourceAccount" : "7118478172",
+  "sourceName" : "yaya",
+  "targetAccount" : "2973795956",
+  "targetName" : "Nayla",
+  "amount" : 100000.0,
+  "balanceAfter" : 355000.0
+}, {
+  "username" : "yiyi",
+  "referenceNumber" : "203216956241",
+  "transactionType" : "Setor Tunai",
+  "transactionDate" : "2025-06-12T20:10:17.1860954",
+  "sourceAccount" : "7118478172",
+  "sourceName" : "yaya",
+  "targetAccount" : "7118478172",
+  "targetName" : "yaya",
+  "amount" : 200000.0,
+  "balanceAfter" : 555000.0
+}, {
+  "username" : "Admin123",
+  "referenceNumber" : "094299507722",
+  "transactionType" : "Setor Tunai",
+  "transactionDate" : "2025-06-12T20:13:41.4682372",
+  "sourceAccount" : "9545834548",
+  "sourceName" : "tatang kopling",
+  "targetAccount" : "9545834548",
+  "targetName" : "tatang kopling",
+  "amount" : 500000.0,
+  "balanceAfter" : 500000.0
+}, {
+  "username" : "Admin123",
+  "referenceNumber" : "738362965883",
+  "transactionType" : "Tarik Tunai",
+  "transactionDate" : "2025-06-12T20:20:55.4965448",
+  "sourceAccount" : "9545834548",
+  "sourceName" : "tatang kopling",
+  "targetAccount" : "9545834548",
+  "targetName" : "tatang kopling",
+  "amount" : 50000.0,
+  "balanceAfter" : 450000.0
+} ]

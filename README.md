@@ -1,17 +1,3 @@
-Untuk membuat README berdasarkan isi dari file ZIP tersebut (`PROJECT ATM KLP 21.zip`), saya akan mengekstrak dan menganalisis struktur proyek terlebih dahulu. Setelah itu, saya akan buatkan README yang sesuai dengan format standar (seperti untuk GitHub), mencakup:
-
-* Deskripsi proyek
-* Fitur utama
-* Teknologi yang digunakan
-* Cara menjalankan
-* Struktur folder
-* Kontributor (jika perlu)
-
-Mari saya mulai dengan memeriksa isi file ZIP terlebih dahulu.
-
-
-Berdasarkan struktur dari file `PROJECT ATM KLP 21.zip`, proyek ini merupakan aplikasi ATM simulasi berbasis Java menggunakan Gradle sebagai sistem build. Berikut adalah file `README.md` yang sesuai:
-
 ---
 
 ````markdown

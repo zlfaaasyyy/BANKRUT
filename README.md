@@ -7,13 +7,13 @@ seperti login, pendaftaran, tarik/setor tunai, transfer,dan melihat riwayat tran
 
 ## Fitur Utama
 
--** Login dan Register**
--** Setor Tunai**
--** Tarik Tunai**
--** Transfer Antar Akun**
--** Riwayat Transaksi**
--** Struktur MVC**
-- ** Data Tersimpan dalam Format JSON** (`users.json`, `transactions.json`)
+- Login dan Register
+- Setor Tunai
+- Tarik Tunai
+- Transfer Antar Akun
+- Riwayat Transaksi
+- Struktur MVC
+-  Data Tersimpan dalam Format JSON (`users.json`, `transactions.json`)
 
 ## Teknologi yang Digunakan
 

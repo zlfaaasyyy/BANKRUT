@@ -1,9 +1,9 @@
 ````markdown
 # ATM Simulation Project - Kelompok 21
 
-Proyek ini merupakan simulasi sistem ATM yang dibangun menggunakan bahasa pemrograman Java dengan struktur Model-View-Controller (MVC).
-Aplikasi ini menyediakan fitur-fitur dasar yang umum ditemukan dalam mesin ATM, seperti login, pendaftaran, tarik/setor tunai, transfer,
-dan melihat riwayat transaksi.
+Proyek ini merupakan simulasi sistem ATM yang dibangun menggunakan bahasa pemrograman Java dengan struktur
+Model-View-Controller (MVC). Aplikasi ini menyediakan fitur-fitur dasar yang umum ditemukan dalam mesin ATM,
+seperti login, pendaftaran, tarik/setor tunai, transfer,dan melihat riwayat transaksi.
 
 ## Fitur Utama
 

@@ -82,18 +82,15 @@ public class TransferController extends BaseController {
     private void handleLanjut() {
         try {
             if (!transferView.isShowingNominalEntry() && !transferView.isShowingPinEntry()) {
-                // Currently showing account entry
                 String accountNumber = transferView.getAccountNumberField().getText().trim();
                 if (transferView.validateAccountNumber(accountNumber)) {
                     transferView.showNominalEntry();
                     System.out.println("Menampilkan halaman nominal entry");
                 }
             } else if (transferView.isShowingNominalEntry()) {
-                // Currently showing nominal entry
                 transferView.showPinEntry();
                 System.out.println("Menampilkan halaman PIN entry");
             } else {
-                // Currently showing PIN entry, go back to nominal
                 transferView.showNominalEntry();
                 System.out.println("Kembali ke halaman nominal dari PIN entry");
             }
@@ -111,13 +108,12 @@ public class TransferController extends BaseController {
                              " ke rekening: " + targetAccountNumber +
                              ", Saldo baru: " + currentUser.getSaldo());
             
-            // Save transaction to history
             Transaction transaction = new Transaction(currentUser.getNamaLengkap(), 
-                                                    currentUser.getNomorRekening(),
-                                                    targetName,
-                                                    targetAccountNumber,
-                                                    nominal, 
-                                                    currentUser.getSaldo());
+                currentUser.getNomorRekening(),
+                targetName,
+                targetAccountNumber,
+                nominal, 
+                currentUser.getSaldo());
             dashboardController.getTransactionService().saveTransaction(transaction, currentUser.getUsername());
             
             dashboardController.showView(primaryStage);

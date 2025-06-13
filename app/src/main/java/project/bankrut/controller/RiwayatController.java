@@ -17,8 +17,7 @@ public class RiwayatController extends BaseController {
     private DashboardController dashboardController;
     private TransactionService transactionService;
     
-    public RiwayatController(UserDataService userDataService, BankUser user, 
-                           DashboardController dashboardController, TransactionService transactionService) {
+    public RiwayatController(UserDataService userDataService, BankUser user, DashboardController dashboardController, TransactionService transactionService) {
         super(userDataService);
         this.currentUser = user;
         this.dashboardController = dashboardController;

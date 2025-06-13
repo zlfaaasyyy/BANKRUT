@@ -103,12 +103,8 @@ public class TransactionService {
             } else {
                 transaction = new Transaction(sourceName, sourceAccount, targetName, targetAccount, amount, balanceAfter);
             }
-            
-            // Set reference number and date from saved data
             setTransactionFields(transaction, node);
-            
             return transaction;
-            
         } catch (Exception e) {
             System.err.println("Error reconstructing transaction: " + e.getMessage());
             return null;
@@ -117,7 +113,6 @@ public class TransactionService {
     
     private void setTransactionFields(Transaction transaction, ObjectNode node) {
         try {
-            // Use reflection to set private fields
             java.lang.reflect.Field refField = Transaction.class.getDeclaredField("referenceNumber");
             refField.setAccessible(true);
             refField.set(transaction, node.get("referenceNumber").asText());

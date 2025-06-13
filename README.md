@@ -67,13 +67,43 @@ app/
 ├── src/
 │   └── main/java/project/bankrut/
 │       ├── controller/        # Logika aplikasi
+│       │   ├── BaseController.java
+│       │   ├── DashboardController.java
+│       │   ├── LoginController.java
+│       │   ├── RegisterController.java
+│       │   ├── RiwayatController.java
+│       │   ├── SetorTunaiController.java
+│       │   ├── TarikTunaiController.java
+│       │   └── TransferController.java
+│       │
 │       ├── model/             # Struktur data (user, transaksi)
+│       │   ├── BankUser.java
+│       │   ├── BaseUser.java
+│       │   └── Transaction.java
+│       │
 │       ├── service/           # Akses dan manipulasi data JSON
+│       │   ├── JsonBaseService.java
+│       │   ├── JsonUserDataService.java
+│       │   ├── TransactionService.java
+│       │   └── UserDataService.java
+│       │
 │       ├── view/              # Antarmuka pengguna berbasis teks
+│       │   ├── BaseView.java
+│       │   ├── DashboardView.java
+│       │   ├── DetailTransaksiView.java
+│       │   ├── LoginFormView.java
+│       │   ├── LoginView.java
+│       │   ├── RegisterView.java
+│       │   ├── RiwayatView.java
+│       │   ├── SetorTunaiView.java
+│       │   ├── TarikTunaiView.java
+│       │   └── TransferView.java
+│       │
 │       └── BankrutApp.java    # Entry point aplikasi
+│
 ├── resources/                 # (Kosong atau digunakan untuk keperluan tambahan)
 ├── users.json                 # Data pengguna
-├── transactions.json          # Data transaksi
+└── transactions.json          # Data transaksi
 ````
 
 ---

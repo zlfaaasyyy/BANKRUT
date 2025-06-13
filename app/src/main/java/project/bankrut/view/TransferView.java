@@ -235,8 +235,7 @@ public class TransferView {
         instructionLabel.setFont(Font.font("Tahoma", FontWeight.NORMAL, 14));
         instructionLabel.setTextFill(Color.web("#424242"));
         instructionLabel.setAlignment(Pos.CENTER);
-        
-        // Show current balance and target account
+
         Label saldoLabel = new Label("Saldo tersedia: Rp. " + currencyFormat.format(currentUser.getSaldo()));
         saldoLabel.setFont(Font.font("Tahoma", FontWeight.BOLD, 14));
         saldoLabel.setTextFill(Color.web("#C01515"));

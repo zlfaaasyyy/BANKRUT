@@ -98,11 +98,10 @@ public class SetorTunaiController extends BaseController {
             System.out.println("Setor tunai berhasil - Nominal: " + nominal + 
                              ", Saldo baru: " + currentUser.getSaldo());
             
-            // Save transaction to history
             Transaction transaction = new Transaction(currentUser.getNamaLengkap(), 
-                                                    currentUser.getNomorRekening(), 
-                                                    nominal, 
-                                                    currentUser.getSaldo());
+            currentUser.getNomorRekening(), 
+            nominal, 
+            currentUser.getSaldo());
             dashboardController.getTransactionService().saveTransaction(transaction, currentUser.getUsername());
             
             dashboardController.showView(primaryStage);

@@ -136,11 +136,3 @@ gradlew.bat run
 ```
 
 ---
-
-## Pembagian Tugas Per Anggota
-
--**ANDI FA'ATHIR EKA SAPUTRA A.A**
-
--**ZALFA SYAUQIYAH HAMKA**
-
--**NAYLA ZAKY FAUZIAH**

@@ -79,7 +79,6 @@ public class TarikTunaiView {
 
         HBox header = createHeader();
         
-        // Create scrollable content area
         scrollPane = new ScrollPane();
         scrollPane.setFitToWidth(true);
         scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
@@ -170,8 +169,7 @@ public class TarikTunaiView {
         instructionLabel.setFont(Font.font("Tahoma", FontWeight.NORMAL, 14));
         instructionLabel.setTextFill(Color.web("#424242"));
         instructionLabel.setAlignment(Pos.CENTER);
-        
-        // Show current balance
+
         Label saldoLabel = new Label("Saldo tersedia: Rp. " + currencyFormat.format(currentUser.getSaldo()));
         saldoLabel.setFont(Font.font("Tahoma", FontWeight.BOLD, 14));
         saldoLabel.setTextFill(Color.web("#C01515"));
@@ -271,7 +269,6 @@ public class TarikTunaiView {
         button.setPrefWidth(120);
         button.setPrefHeight(35);
         
-        // Check if amount is available
         boolean isAvailable = value <= currentUser.getSaldo();
         
         if (isAvailable) {
@@ -318,7 +315,6 @@ public class TarikTunaiView {
                 hideWarning();
             });
         } else {
-            // Disabled style for insufficient balance
             button.setStyle(
                 "-fx-background-color: #F5F5F5;" +
                 "-fx-text-fill: #BDBDBD;" +

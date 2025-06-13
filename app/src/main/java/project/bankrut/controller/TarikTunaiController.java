@@ -98,12 +98,11 @@ public class TarikTunaiController extends BaseController {
             System.out.println("Tarik tunai berhasil - Nominal: " + nominal + 
                              ", Saldo baru: " + currentUser.getSaldo());
             
-            // Save transaction to history
             Transaction transaction = new Transaction(currentUser.getNamaLengkap(), 
-                                                    currentUser.getNomorRekening(), 
-                                                    nominal, 
-                                                    currentUser.getSaldo(), 
-                                                    true); // true indicates withdrawal
+                currentUser.getNomorRekening(), 
+                nominal, 
+                currentUser.getSaldo(), 
+                true);
             dashboardController.getTransactionService().saveTransaction(transaction, currentUser.getUsername());
             
             dashboardController.showView(primaryStage);

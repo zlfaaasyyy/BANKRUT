@@ -49,7 +49,7 @@ Halaman ini digunakan untuk melihat catatan atau history dari semua transaksi ya
 
 ### H. Penyimpanan data user dan riwayat transaksi
 1. Penyimpanan data user dan riwayat transaksi dengan format JSON yaitu 'users.json' untuk user dan 'transactions' untuk riwayat transaksi
-2. Otomatis akan membuat file json 'user' dan 'transactions' saat aplikasi pertama kali dijalan jika file tersebut belum dibuat.
+2. Otomatis akan membuat file json `user` dan `transactions` saat aplikasi pertama kali dijalan jika file tersebut belum dibuat.
 
 ---
 
@@ -77,12 +77,51 @@ app/
 ````
 
 ---
+## Struktur Class
+Project ini menggunakan prinsip **Pemrograman Berorientasi Objek (OOP)** dan dibagi dalam beberapa package berikut:
 
-## Cara Menjalankan Proyek
+### App
+**Main**
+- Berfungsi sebagai entry point program.
+- Menjalankan `LoginView` sebagai tampilan awal aplikasi.
 
-1. **Clone atau ekstrak proyek ini**
-2. **Buka terminal di direktori `PROJECT ATM KLP 21`**
-3. **Build dan jalankan proyek dengan Gradle**:
+### Controller
+Controller merupakan bagian yang menghubungkan model dan view pada setiap proses request dari user. Isi dari controller:
+ > `BaseController`, `LoginController`, `RegisterController`, `DashboardController`, `TarikTunaiController`, `SetorTunaiController`, `TransactionController` dan `RiwayatController`
+
+### Models
+Models berfungsi sebagai representasi data dan business logic dalam aplikasi. Models bertugas menyimpan struktur data, mengimplementasikan aturan validasi dan logika, serta menyediakan encapsulation melalui getter/setter untuk melindungi integritas data.  Isi dari Models:
+> `BankUser`, `BaseUser`, `Transaction`
+
+### Service
+Service bertanggung jawab untuk mengelola transaksi data, validasi bisnis yang rumit, integrasi dengan sistem eksternal seperti file, dan pemrosesan data sebelum dikirim ke model atau view. Isi dari service:
+> `JsonBaseService`, `JsonUserDataService`, `TransactionService`, dan `UserDataService`
+
+### View
+View berfungsi sebagai presentation layer yang bertanggung jawab menampilkan antarmuka pengguna dan menerima input dari user. 
+>  `LoginView`,  `LoginFormView`,  `UserDataService`,  `RegisterView`,  `DashboardView`,  `SetorTunaiView`,  `TarikTunaiView`,  `TransferView`,  `RiwayatView`, dan  `DetailTransaksiView`.
+
+ ---
+
+## Penerapan 4 Pilar OOP
+Struktur ini menerapkan 4 pilar OOP, yaitu:
+- **Encapsulation**
+Menggunakan Access Modifier seperti private, protected , dan public untuk mengontrol akses dan menggunakan method getter untuk akses terkontrol.
+- **Inheritance**
+Semua controller mewarisi dari  `BaseController` dan harus diimplementasi di subclass.
+- **Abstraction**
+ `BaseController` digunakan sebagai template tanpa implementasi lengkap dan memaksa subclass mengimplementasikan behavior spesifik.
+- **Polymorphism**
+Menggunakan method overriding dimana setiap controller mengimplementasikan  `showView()` dan  `setUpEventHandlers()` dengan cara berbeda. Semua controller memiliki method yang sama tapi behavior berbeda.
+
+---
+
+## Cara Menjalankan Aplikasi
+
+1. Pastikan Anda telah menginstall Java JDK atau IDE lain seperti IntelliJ IDEA atau Eclipse).
+2. Clone repositori melalui Command Prompt: git clone https://github.com/zlfaaasyyy/BANKRUT.git
+3. Atau menggunakan alternatif lain (lebih mudah): Klik tombol code lalu download ZIP, kemudian ekstrak file ZIP ke folder pilihan anda
+5. Jalankan project dengan Gradle
 
 ```bash
 ./gradlew build
@@ -96,21 +135,9 @@ gradlew.bat build
 gradlew.bat run
 ```
 
-## Pengujian
+---
 
-File test terdapat di:
-
-```
-app/src/test/java/project/atm/klp/AppTest.java
-```
-
-Jalankan test dengan:
-
-```bash
-./gradlew test
-```
-
-## Kontributor
+## Pembagian Tugas Per Anggota
 
 -**ANDI FA'ATHIR EKA SAPUTRA A.A**
 

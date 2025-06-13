@@ -42,8 +42,6 @@ public class SetorTunaiView {
     private boolean showingPinEntry = false;
     private ScrollPane scrollPane;
     private TransactionCallback transactionCallback;
-
-    // Constants
     private static final String PRIMARY_COLOR = "rgb(192, 21, 21)";
     private static final String PRIMARY_DARK = "rgb(161, 13, 13)";
     private static final String BACKGROUND_COLOR = "rgb(255, 235, 238)";
